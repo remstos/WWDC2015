@@ -13,6 +13,10 @@
 		A571D3DD1AC8D74C00BB30EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A571D3DC1AC8D74C00BB30EF /* Images.xcassets */; };
 		A571D3E01AC8D74C00BB30EF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A571D3DE1AC8D74C00BB30EF /* LaunchScreen.xib */; };
 		A571D3EC1AC8D74C00BB30EF /* RemiSantosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571D3EB1AC8D74C00BB30EF /* RemiSantosTests.swift */; };
+		A571D3FA1AC8D7A500BB30EF /* RSIntroElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571D3F61AC8D7A500BB30EF /* RSIntroElement.swift */; };
+		A571D3FB1AC8D7A500BB30EF /* RSIntroPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571D3F71AC8D7A500BB30EF /* RSIntroPage.swift */; };
+		A571D3FC1AC8D7A500BB30EF /* RSIntroTopPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571D3F81AC8D7A500BB30EF /* RSIntroTopPage.swift */; };
+		A571D3FD1AC8D7A500BB30EF /* RSIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571D3F91AC8D7A500BB30EF /* RSIntroView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		A571D3E51AC8D74C00BB30EF /* RemiSantosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemiSantosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A571D3EA1AC8D74C00BB30EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A571D3EB1AC8D74C00BB30EF /* RemiSantosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemiSantosTests.swift; sourceTree = "<group>"; };
+		A571D3F61AC8D7A500BB30EF /* RSIntroElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIntroElement.swift; sourceTree = "<group>"; };
+		A571D3F71AC8D7A500BB30EF /* RSIntroPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIntroPage.swift; sourceTree = "<group>"; };
+		A571D3F81AC8D7A500BB30EF /* RSIntroTopPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIntroTopPage.swift; sourceTree = "<group>"; };
+		A571D3F91AC8D7A500BB30EF /* RSIntroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIntroView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,7 @@
 		A571D3C71AC8D74C00BB30EF = {
 			isa = PBXGroup;
 			children = (
+				A571D3F51AC8D7A500BB30EF /* RSIntro */,
 				A571D3D21AC8D74C00BB30EF /* RemiSantos */,
 				A571D3E81AC8D74C00BB30EF /* RemiSantosTests */,
 				A571D3D11AC8D74C00BB30EF /* Products */,
@@ -110,6 +119,18 @@
 				A571D3EA1AC8D74C00BB30EF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A571D3F51AC8D7A500BB30EF /* RSIntro */ = {
+			isa = PBXGroup;
+			children = (
+				A571D3F61AC8D7A500BB30EF /* RSIntroElement.swift */,
+				A571D3F71AC8D7A500BB30EF /* RSIntroPage.swift */,
+				A571D3F81AC8D7A500BB30EF /* RSIntroTopPage.swift */,
+				A571D3F91AC8D7A500BB30EF /* RSIntroView.swift */,
+			);
+			name = RSIntro;
+			path = RSIntro/RSIntro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A571D3FD1AC8D7A500BB30EF /* RSIntroView.swift in Sources */,
 				A571D3D81AC8D74C00BB30EF /* ViewController.swift in Sources */,
+				A571D3FA1AC8D7A500BB30EF /* RSIntroElement.swift in Sources */,
+				A571D3FC1AC8D7A500BB30EF /* RSIntroTopPage.swift in Sources */,
+				A571D3FB1AC8D7A500BB30EF /* RSIntroPage.swift in Sources */,
 				A571D3D61AC8D74C00BB30EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
