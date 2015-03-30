@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A571D3D61AC8D74C00BB30EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571D3D51AC8D74C00BB30EF /* AppDelegate.swift */; };
+		A571D3D81AC8D74C00BB30EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571D3D71AC8D74C00BB30EF /* ViewController.swift */; };
+		A571D3DB1AC8D74C00BB30EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A571D3D91AC8D74C00BB30EF /* Main.storyboard */; };
+		A571D3DD1AC8D74C00BB30EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A571D3DC1AC8D74C00BB30EF /* Images.xcassets */; };
+		A571D3E01AC8D74C00BB30EF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A571D3DE1AC8D74C00BB30EF /* LaunchScreen.xib */; };
+		A571D3EC1AC8D74C00BB30EF /* RemiSantosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571D3EB1AC8D74C00BB30EF /* RemiSantosTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A571D3E61AC8D74C00BB30EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A571D3C81AC8D74C00BB30EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A571D3CF1AC8D74C00BB30EF;
+			remoteInfo = RemiSantos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A571D3D01AC8D74C00BB30EF /* RemiSantos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemiSantos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A571D3D41AC8D74C00BB30EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A571D3D51AC8D74C00BB30EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A571D3D71AC8D74C00BB30EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A571D3DA1AC8D74C00BB30EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A571D3DC1AC8D74C00BB30EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A571D3DF1AC8D74C00BB30EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A571D3E51AC8D74C00BB30EF /* RemiSantosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemiSantosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A571D3EA1AC8D74C00BB30EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A571D3EB1AC8D74C00BB30EF /* RemiSantosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemiSantosTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A571D3CD1AC8D74C00BB30EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A571D3E21AC8D74C00BB30EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A571D3C71AC8D74C00BB30EF = {
+			isa = PBXGroup;
+			children = (
+				A571D3D21AC8D74C00BB30EF /* RemiSantos */,
+				A571D3E81AC8D74C00BB30EF /* RemiSantosTests */,
+				A571D3D11AC8D74C00BB30EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A571D3D11AC8D74C00BB30EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A571D3D01AC8D74C00BB30EF /* RemiSantos.app */,
+				A571D3E51AC8D74C00BB30EF /* RemiSantosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A571D3D21AC8D74C00BB30EF /* RemiSantos */ = {
+			isa = PBXGroup;
+			children = (
+				A571D3D51AC8D74C00BB30EF /* AppDelegate.swift */,
+				A571D3D71AC8D74C00BB30EF /* ViewController.swift */,
+				A571D3D91AC8D74C00BB30EF /* Main.storyboard */,
+				A571D3DC1AC8D74C00BB30EF /* Images.xcassets */,
+				A571D3DE1AC8D74C00BB30EF /* LaunchScreen.xib */,
+				A571D3D31AC8D74C00BB30EF /* Supporting Files */,
+			);
+			path = RemiSantos;
+			sourceTree = "<group>";
+		};
+		A571D3D31AC8D74C00BB30EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A571D3D41AC8D74C00BB30EF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A571D3E81AC8D74C00BB30EF /* RemiSantosTests */ = {
+			isa = PBXGroup;
+			children = (
+				A571D3EB1AC8D74C00BB30EF /* RemiSantosTests.swift */,
+				A571D3E91AC8D74C00BB30EF /* Supporting Files */,
+			);
+			path = RemiSantosTests;
+			sourceTree = "<group>";
+		};
+		A571D3E91AC8D74C00BB30EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A571D3EA1AC8D74C00BB30EF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A571D3CF1AC8D74C00BB30EF /* RemiSantos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A571D3EF1AC8D74C00BB30EF /* Build configuration list for PBXNativeTarget "RemiSantos" */;
+			buildPhases = (
+				A571D3CC1AC8D74C00BB30EF /* Sources */,
+				A571D3CD1AC8D74C00BB30EF /* Frameworks */,
+				A571D3CE1AC8D74C00BB30EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemiSantos;
+			productName = RemiSantos;
+			productReference = A571D3D01AC8D74C00BB30EF /* RemiSantos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A571D3E41AC8D74C00BB30EF /* RemiSantosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A571D3F21AC8D74C00BB30EF /* Build configuration list for PBXNativeTarget "RemiSantosTests" */;
+			buildPhases = (
+				A571D3E11AC8D74C00BB30EF /* Sources */,
+				A571D3E21AC8D74C00BB30EF /* Frameworks */,
+				A571D3E31AC8D74C00BB30EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A571D3E71AC8D74C00BB30EF /* PBXTargetDependency */,
+			);
+			name = RemiSantosTests;
+			productName = RemiSantosTests;
+			productReference = A571D3E51AC8D74C00BB30EF /* RemiSantosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A571D3C81AC8D74C00BB30EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Remi Santos";
+				TargetAttributes = {
+					A571D3CF1AC8D74C00BB30EF = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					A571D3E41AC8D74C00BB30EF = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = A571D3CF1AC8D74C00BB30EF;
+					};
+				};
+			};
+			buildConfigurationList = A571D3CB1AC8D74C00BB30EF /* Build configuration list for PBXProject "RemiSantos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A571D3C71AC8D74C00BB30EF;
+			productRefGroup = A571D3D11AC8D74C00BB30EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A571D3CF1AC8D74C00BB30EF /* RemiSantos */,
+				A571D3E41AC8D74C00BB30EF /* RemiSantosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A571D3CE1AC8D74C00BB30EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A571D3DB1AC8D74C00BB30EF /* Main.storyboard in Resources */,
+				A571D3E01AC8D74C00BB30EF /* LaunchScreen.xib in Resources */,
+				A571D3DD1AC8D74C00BB30EF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A571D3E31AC8D74C00BB30EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A571D3CC1AC8D74C00BB30EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A571D3D81AC8D74C00BB30EF /* ViewController.swift in Sources */,
+				A571D3D61AC8D74C00BB30EF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A571D3E11AC8D74C00BB30EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A571D3EC1AC8D74C00BB30EF /* RemiSantosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A571D3E71AC8D74C00BB30EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A571D3CF1AC8D74C00BB30EF /* RemiSantos */;
+			targetProxy = A571D3E61AC8D74C00BB30EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A571D3D91AC8D74C00BB30EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A571D3DA1AC8D74C00BB30EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A571D3DE1AC8D74C00BB30EF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A571D3DF1AC8D74C00BB30EF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A571D3ED1AC8D74C00BB30EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A571D3EE1AC8D74C00BB30EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A571D3F01AC8D74C00BB30EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RemiSantos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A571D3F11AC8D74C00BB30EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RemiSantos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A571D3F31AC8D74C00BB30EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RemiSantosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemiSantos.app/RemiSantos";
+			};
+			name = Debug;
+		};
+		A571D3F41AC8D74C00BB30EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RemiSantosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemiSantos.app/RemiSantos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A571D3CB1AC8D74C00BB30EF /* Build configuration list for PBXProject "RemiSantos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A571D3ED1AC8D74C00BB30EF /* Debug */,
+				A571D3EE1AC8D74C00BB30EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A571D3EF1AC8D74C00BB30EF /* Build configuration list for PBXNativeTarget "RemiSantos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A571D3F01AC8D74C00BB30EF /* Debug */,
+				A571D3F11AC8D74C00BB30EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A571D3F21AC8D74C00BB30EF /* Build configuration list for PBXNativeTarget "RemiSantosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A571D3F31AC8D74C00BB30EF /* Debug */,
+				A571D3F41AC8D74C00BB30EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A571D3C81AC8D74C00BB30EF /* Project object */;
+}
