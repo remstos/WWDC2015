@@ -40,6 +40,14 @@ class PageProjectsViewController: UIViewController {
         captain.frame = CGRectOffset(captain.frame, -200, 0)
         introView?.addElement(captain)
         
+        var thumb = Link(frame: CGRect(x: view.frame.size.width - 70, y: 60, width: linkSize-2, height: linkSize-2))
+        thumb.image = UIImage(named: "thumbify-icon")
+        thumb.addKeyFrame(CGRectOffset(thumb.frame, 250, 0), forTime: time - CGFloat(300))
+        thumb.addKeyFrame(thumb.frame, forTime: time)
+        thumb.addKeyFrame(CGRectOffset(thumb.frame, 250, 0), forTime: time + CGFloat(300))
+        thumb.frame = CGRectOffset(thumb.frame, 250, 0)
+        introView?.addElement(thumb)
+        
         var sofa = Link(frame: CGRect(x: view.frame.size.width - 100, y: 250, width: linkSize, height: linkSize))
         sofa.image = UIImage(named: "sofa-icon")
         sofa.addKeyFrame(CGRectOffset(sofa.frame, 200, 0), forTime: time - CGFloat(300))
