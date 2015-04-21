@@ -23,6 +23,9 @@
 		A5841E4C1AE2CAD5004F3F77 /* PageAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5841E4B1AE2CAD5004F3F77 /* PageAboutViewController.swift */; };
 		A5841E4E1AE2CB3C004F3F77 /* RSDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5841E4D1AE2CB3C004F3F77 /* RSDevice.swift */; };
 		A5841E501AE3F5AD004F3F77 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5841E4F1AE3F5AD004F3F77 /* Link.swift */; };
+		A591F12D1AE53A3B003116C2 /* PageWWDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591F12C1AE53A3B003116C2 /* PageWWDCViewController.swift */; };
+		A591F12F1AE53C2D003116C2 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591F12E1AE53C2D003116C2 /* WebViewController.swift */; };
+		A591F1311AE55E32003116C2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591F1301AE55E32003116C2 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		A5841E4B1AE2CAD5004F3F77 /* PageAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageAboutViewController.swift; sourceTree = "<group>"; };
 		A5841E4D1AE2CB3C004F3F77 /* RSDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSDevice.swift; sourceTree = "<group>"; };
 		A5841E4F1AE3F5AD004F3F77 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		A591F12C1AE53A3B003116C2 /* PageWWDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageWWDCViewController.swift; sourceTree = "<group>"; };
+		A591F12E1AE53C2D003116C2 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		A591F1301AE55E32003116C2 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +106,13 @@
 			children = (
 				A571D3D51AC8D74C00BB30EF /* AppDelegate.swift */,
 				A571D3D71AC8D74C00BB30EF /* ViewController.swift */,
+				A591F12E1AE53C2D003116C2 /* WebViewController.swift */,
 				A5841E481AE2BE23004F3F77 /* Pages */,
 				A544D9291AE043DC009A05F2 /* Triangle.swift */,
 				A544D92B1AE065BD009A05F2 /* Bubble.swift */,
 				A5841E4F1AE3F5AD004F3F77 /* Link.swift */,
 				A5841E4D1AE2CB3C004F3F77 /* RSDevice.swift */,
+				A591F1301AE55E32003116C2 /* UIView+Extension.swift */,
 				A571D3D91AC8D74C00BB30EF /* Main.storyboard */,
 				A571D3DC1AC8D74C00BB30EF /* Images.xcassets */,
 				A571D3DE1AC8D74C00BB30EF /* LaunchScreen.xib */,
@@ -154,6 +162,7 @@
 			children = (
 				A5841E491AE2BE45004F3F77 /* PageProjectsViewController.swift */,
 				A5841E4B1AE2CAD5004F3F77 /* PageAboutViewController.swift */,
+				A591F12C1AE53A3B003116C2 /* PageWWDCViewController.swift */,
 			);
 			name = Pages;
 			sourceTree = "<group>";
@@ -258,8 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A591F12D1AE53A3B003116C2 /* PageWWDCViewController.swift in Sources */,
 				A571D3FD1AC8D7A500BB30EF /* RSIntroView.swift in Sources */,
 				A5841E4C1AE2CAD5004F3F77 /* PageAboutViewController.swift in Sources */,
+				A591F1311AE55E32003116C2 /* UIView+Extension.swift in Sources */,
 				A571D3D81AC8D74C00BB30EF /* ViewController.swift in Sources */,
 				A5841E501AE3F5AD004F3F77 /* Link.swift in Sources */,
 				A571D3FA1AC8D7A500BB30EF /* RSIntroElement.swift in Sources */,
@@ -268,6 +279,7 @@
 				A571D3FC1AC8D7A500BB30EF /* RSIntroTopPage.swift in Sources */,
 				A571D3FB1AC8D7A500BB30EF /* RSIntroPage.swift in Sources */,
 				A5841E4A1AE2BE45004F3F77 /* PageProjectsViewController.swift in Sources */,
+				A591F12F1AE53C2D003116C2 /* WebViewController.swift in Sources */,
 				A571D3D61AC8D74C00BB30EF /* AppDelegate.swift in Sources */,
 				A544D92A1AE043DC009A05F2 /* Triangle.swift in Sources */,
 			);
@@ -396,7 +408,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -408,7 +420,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

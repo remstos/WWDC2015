@@ -7,8 +7,8 @@
 //
 
 import UIKit
-private let maxBubbleSize = 10
-private let minBubbleSize = 3
+private let maxBubbleSize = 30
+private let minBubbleSize = 5
 
 class Bubble: RSIntroElement {
    
@@ -41,6 +41,8 @@ class Bubble: RSIntroElement {
         self.layer.borderColor = UIColor.whiteColor().CGColor
         self.layer.borderWidth = 2
         self.alpha = 0.5
+        
+        self.addParallaxEffectWithIntensity(self.frame.size.width)
     }
 }
 

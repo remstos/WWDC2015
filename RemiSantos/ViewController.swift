@@ -9,8 +9,8 @@
 import UIKit
 
 
-let A4Width = UIDevice.currentDevice().userInterfaceIdiom == .Pad ? 400 : 200 as CGFloat
-let A4Height = UIDevice.currentDevice().userInterfaceIdiom == .Pad ? 566 : 283 as CGFloat
+let A4Width = isIpad ? 400 : 200 as CGFloat
+let A4Height = isIpad ? 566 : 283 as CGFloat
 
 class ViewController: UIViewController,RSIntroViewDelegate {
     var introView:RSIntroView!
@@ -23,7 +23,9 @@ class ViewController: UIViewController,RSIntroViewDelegate {
     var rectG:RSIntroElement!
     var rectH:RSIntroElement!
     var slideView:UIImageView!
-    var titles = ["Hello there!", "More about me", "Some projects", "WWDC 2015"]
+    var titles = ["Hello there!", "More about me", "Some projects", "See you there?!"]
+    
+    var firstAppear = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,16 +44,18 @@ class ViewController: UIViewController,RSIntroViewDelegate {
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        buildIntro()
-        buildFolds()
-        buildTitleLabel()
-        
-        Bubble.addBubblesToIntroView(introView, number: 80)
-        introView.alpha = 0
-        UIView.animateWithDuration(0.3, animations: { () -> Void in
-            self.introView.alpha = 1
-        })
-        
+        if firstAppear {
+            buildIntro()
+            Bubble.addBubblesToIntroView(introView, number: 80)
+            buildTitleLabel()
+            buildFolds()
+            buildPages()
+            introView.alpha = 0
+            UIView.animateWithDuration(0.3, animations: { () -> Void in
+                self.introView.alpha = 1
+            })
+        }
+        firstAppear = false
         slideView.layer.removeAllAnimations()
         let slideAnim = CAKeyframeAnimation(keyPath: "transform.translation.y")
         slideAnim.values = [170, 120, 70, 20]
@@ -82,13 +86,19 @@ class ViewController: UIViewController,RSIntroViewDelegate {
         introView.delegate = self
         self.view.addSubview(introView)
         
+    }
+    func buildPages() {
         let page1 = RSIntroPage(introView: introView)
+        page1.titleLabel.font = UIFont(name: "Avenir-Book", size: 14)
+        page1.title = "Here's my WWDC15 application.\nScroll down to see more"
         introView.addPageWithView(page1, atIndex:0)
         page1.addSubview(slideView)
         slideView.center = page1.center
         slideView.center.y = page1.frame.size.height - 200
         
         let page2 = self.storyboard?.instantiateViewControllerWithIdentifier("PageAboutVC") as? PageAboutViewController
+        page2?.page = 2
+        page2?.introView = introView
         introView.addPageWithView(page2!.view, atIndex:1)
         
         let page3 = self.storyboard?.instantiateViewControllerWithIdentifier("PageProjectVC") as? PageProjectsViewController
@@ -96,8 +106,10 @@ class ViewController: UIViewController,RSIntroViewDelegate {
         page3?.page = 3
         page3?.introView = introView
         
-        let page4 = RSIntroPage(introView: introView)
-        introView.addPageWithView(page4, atIndex:3)
+        let page4 = self.storyboard?.instantiateViewControllerWithIdentifier("PageWWDCVC") as? PageWWDCViewController
+        introView.addPageWithView(page4!.view, atIndex:3)
+        page4?.page = 4
+        page4?.introView = introView
         
     }
     func buildFolds() {
@@ -242,6 +254,10 @@ class ViewController: UIViewController,RSIntroViewDelegate {
         titleLabel.numberOfLines = 0
         titleLabel.text = titles[0]
         titleLabel.font = UIFont(name: "Avenir-Book", size: 20)
+        titleLabel.layer.shadowColor = UIColor.grayColor().CGColor
+        titleLabel.layer.shadowOffset = CGSize(width: 0, height: 0)
+        titleLabel.layer.shadowOpacity = 1
+        titleLabel.layer.shadowRadius = 0
         titleLabel.autoresizingMask = .FlexibleWidth | .FlexibleHeight
         let titleElement = RSIntroElement(frame: titleLabel.frame)
         titleLabel.frame.origin = CGPointZero

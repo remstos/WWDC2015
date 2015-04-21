@@ -8,6 +8,8 @@
 
 import UIKit
 
+var isIpad = false // UIDevice.currentDevice().userInterfaceIdiom == .Pad
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
