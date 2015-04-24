@@ -90,6 +90,9 @@ class ViewController: UIViewController,RSIntroViewDelegate {
     func buildPages() {
         let page1 = RSIntroPage(introView: introView)
         page1.titleLabel.font = UIFont(name: "Avenir-Book", size: 14)
+        if (isIpad) {
+            page1.titleLabel.frame.origin.y += 200;
+        }
         page1.title = "Here's my WWDC15 application.\nScroll down to see more"
         introView.addPageWithView(page1, atIndex:0)
         page1.addSubview(slideView)

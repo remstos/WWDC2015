@@ -8,7 +8,7 @@
 
 import UIKit
 
-var isIpad = false // UIDevice.currentDevice().userInterfaceIdiom == .Pad
+var isIpad = UIDevice.currentDevice().userInterfaceIdiom == .Pad
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        if (!RSDevice.is4Point7inches()) {
+            println("pssst, this app looks way more gorgeous on an iPhone 6 ;)");
+        }
         return true
     }
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D113c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D113c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -42,40 +42,36 @@
                         <viewControllerLayoutGuide type="bottom" id="0xS-8O-250"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3xh-yX-0gD">
-                        <rect key="frame" x="2" y="-1" width="283" height="200"/>
+                        <rect key="frame" x="2" y="-1" width="566" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="NXr-tB-eSQ">
-                                <rect key="frame" x="0.0" y="81" width="88" height="119"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="88" id="1ma-vz-zgb">
-                                        <variation key="widthClass=compact" constant="50"/>
-                                    </constraint>
-                                    <constraint firstAttribute="height" constant="119" id="3lI-E6-InT">
-                                        <variation key="widthClass=compact" constant="68"/>
-                                    </constraint>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1um-Q8-fae">
-                                <rect key="frame" x="96" y="81" width="187" height="119"/>
+                                <rect key="frame" x="96" y="281" width="470" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="6UH-3Z-p9C">
                                         <variation key="widthClass=compact" constant="60"/>
                                     </constraint>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Rémi Santos ">
+                                    <fragment content="Rémi Santos">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="26" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="Avenir-Book"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="French Optimistic Developer">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="13" name="Avenir-Book"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -91,6 +87,33 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me" translatesAutoresizingMaskIntoConstraints="NO" id="NXr-tB-eSQ">
+                                <rect key="frame" x="0.0" y="281" width="88" height="119"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="1ma-vz-zgb">
+                                        <variation key="widthClass=compact" constant="50"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="119" id="3lI-E6-InT">
+                                        <variation key="widthClass=compact" constant="68"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="200" id="Qkb-I1-XPf"/>
+                                    <constraint firstAttribute="height" constant="180" id="RxY-eb-RuA"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Qkb-I1-XPf"/>
+                                        <exclude reference="RxY-eb-RuA"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="1ma-vz-zgb"/>
+                                        <exclude reference="3lI-E6-InT"/>
+                                        <include reference="Qkb-I1-XPf"/>
+                                        <include reference="RxY-eb-RuA"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -98,11 +121,15 @@
                                 <variation key="widthClass=compact" constant="8"/>
                             </constraint>
                             <constraint firstItem="1um-Q8-fae" firstAttribute="trailing" secondItem="3xh-yX-0gD" secondAttribute="trailingMargin" constant="16" id="455-Rz-0ce"/>
+                            <constraint firstItem="1um-Q8-fae" firstAttribute="trailing" secondItem="3xh-yX-0gD" secondAttribute="trailingMargin" id="4Ud-0R-pSP"/>
                             <constraint firstItem="NXr-tB-eSQ" firstAttribute="leading" secondItem="3xh-yX-0gD" secondAttribute="leadingMargin" id="9qF-U8-95m"/>
                             <constraint firstItem="NXr-tB-eSQ" firstAttribute="height" secondItem="1um-Q8-fae" secondAttribute="height" id="CWg-kT-wsQ"/>
                             <constraint firstItem="NXr-tB-eSQ" firstAttribute="top" secondItem="1um-Q8-fae" secondAttribute="top" id="FZy-AK-l5h"/>
+                            <constraint firstAttribute="centerX" secondItem="NXr-tB-eSQ" secondAttribute="centerX" id="K46-nb-n6P"/>
+                            <constraint firstItem="0xS-8O-250" firstAttribute="top" secondItem="1um-Q8-fae" secondAttribute="bottom" constant="45" id="KNg-LZ-Lyj"/>
                             <constraint firstItem="1um-Q8-fae" firstAttribute="top" secondItem="NXr-tB-eSQ" secondAttribute="bottom" constant="-104" id="M1Q-mA-BkH"/>
                             <constraint firstItem="1um-Q8-fae" firstAttribute="leading" secondItem="NXr-tB-eSQ" secondAttribute="trailing" constant="8" id="Qfb-fe-B33"/>
+                            <constraint firstItem="1um-Q8-fae" firstAttribute="leading" secondItem="3xh-yX-0gD" secondAttribute="leadingMargin" id="Rc8-oz-4ru"/>
                             <constraint firstAttribute="centerY" secondItem="NXr-tB-eSQ" secondAttribute="centerY" constant="-182" id="WX8-9F-37Y"/>
                             <constraint firstItem="0xS-8O-250" firstAttribute="top" secondItem="1um-Q8-fae" secondAttribute="bottom" id="XBe-dX-SwE"/>
                             <constraint firstItem="NXr-tB-eSQ" firstAttribute="leading" secondItem="3xh-yX-0gD" secondAttribute="leadingMargin" constant="-16" id="cYi-RU-qb3"/>
@@ -111,6 +138,8 @@
                             <constraint firstItem="1um-Q8-fae" firstAttribute="top" secondItem="NXr-tB-eSQ" secondAttribute="bottom" constant="8" id="gVv-bP-Mvf">
                                 <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
+                            <constraint firstItem="NXr-tB-eSQ" firstAttribute="top" secondItem="g8l-Rf-max" secondAttribute="bottom" constant="8" id="ndH-hg-w1o"/>
+                            <constraint firstItem="1um-Q8-fae" firstAttribute="top" secondItem="NXr-tB-eSQ" secondAttribute="bottom" constant="20" id="tHw-tz-Kry"/>
                             <constraint firstAttribute="centerY" secondItem="NXr-tB-eSQ" secondAttribute="centerY" id="tp9-Gj-F13"/>
                             <constraint firstItem="NXr-tB-eSQ" firstAttribute="leading" secondItem="1um-Q8-fae" secondAttribute="trailing" constant="-209" id="wdF-g9-Ei4"/>
                             <constraint firstItem="1um-Q8-fae" firstAttribute="leading" secondItem="NXr-tB-eSQ" secondAttribute="trailing" constant="8" id="z4u-uL-pPq"/>
@@ -119,15 +148,21 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="9qF-U8-95m"/>
+                                <exclude reference="K46-nb-n6P"/>
                                 <exclude reference="WX8-9F-37Y"/>
                                 <exclude reference="caY-ji-e5b"/>
+                                <exclude reference="ndH-hg-w1o"/>
                                 <exclude reference="tp9-Gj-F13"/>
                                 <exclude reference="wdF-g9-Ei4"/>
                                 <exclude reference="zDV-qr-0Tm"/>
                                 <exclude reference="3XC-yi-AVt"/>
+                                <exclude reference="4Ud-0R-pSP"/>
                                 <exclude reference="M1Q-mA-BkH"/>
+                                <exclude reference="Rc8-oz-4ru"/>
                                 <exclude reference="gVv-bP-Mvf"/>
+                                <exclude reference="tHw-tz-Kry"/>
                                 <exclude reference="z4u-uL-pPq"/>
+                                <exclude reference="KNg-LZ-Lyj"/>
                                 <exclude reference="XBe-dX-SwE"/>
                             </mask>
                         </variation>
@@ -150,13 +185,29 @@
                                 <exclude reference="eEm-pq-XLh"/>
                             </mask>
                         </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="CWg-kT-wsQ"/>
+                                <exclude reference="FZy-AK-l5h"/>
+                                <include reference="K46-nb-n6P"/>
+                                <exclude reference="cYi-RU-qb3"/>
+                                <include reference="ndH-hg-w1o"/>
+                                <exclude reference="455-Rz-0ce"/>
+                                <include reference="4Ud-0R-pSP"/>
+                                <exclude reference="Qfb-fe-B33"/>
+                                <include reference="Rc8-oz-4ru"/>
+                                <include reference="tHw-tz-Kry"/>
+                                <include reference="KNg-LZ-Lyj"/>
+                                <exclude reference="eEm-pq-XLh"/>
+                            </mask>
+                        </variation>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="283" height="200"/>
+                    <size key="freeformSize" width="566" height="400"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hnb-WG-way" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="269.5" y="-262"/>
+            <point key="canvasLocation" x="244.5" y="-353"/>
         </scene>
         <!--Page About View Controller-->
         <scene sceneID="lex-Lf-clq">

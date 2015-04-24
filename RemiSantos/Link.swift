@@ -97,8 +97,9 @@ class Link: RSIntroElement, SKStoreProductViewControllerDelegate {
         popover.hidden = true
         popover.setTranslatesAutoresizingMaskIntoConstraints(false)
         addSubview(popover)
-        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-(-140)-[popover]-(-140)-|", options: .allZeros, metrics: nil, views: ["popover":popover]))
+        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-(-120)-[popover]-(-120)-|", options: .allZeros, metrics: nil, views: ["popover":popover]))
         self.addConstraint(NSLayoutConstraint(item: popover, attribute: .Top, relatedBy: .Equal, toItem: self, attribute: .Top, multiplier: 1, constant: self.frame.size.height + 20))
+        self.addConstraint(NSLayoutConstraint(item: popover, attribute: .Height, relatedBy: .LessThanOrEqual, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 180))
 
         
         detailLabel = UILabel(frame: self.frame)
@@ -122,7 +123,7 @@ class Link: RSIntroElement, SKStoreProductViewControllerDelegate {
         popover.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[button]|", options: .allZeros, metrics: nil, views: ["button":detailButton]))
         popover.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-10-[detail]-10-|", options: .allZeros, metrics: nil, views: ["detail":detailLabel]))
         popover.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-10-[detail]-[button]|", options: .allZeros, metrics: nil, views: ["detail":detailLabel, "button":detailButton]))
-        buttonHeight = NSLayoutConstraint(item: detailButton, attribute: .Height, relatedBy: .Equal, toItem: detailButton, attribute: .Height, multiplier: 1, constant: 0)
+        buttonHeight = NSLayoutConstraint(item: detailButton, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 0)
         popover.addConstraint(buttonHeight!)
 
         self.sendSubviewToBack(popover)
@@ -134,15 +135,24 @@ class Link: RSIntroElement, SKStoreProductViewControllerDelegate {
 
     func moreButtonClicked(sender:UIButton) {
         if appId != nil {
+            if 1 == 1 || UIDevice.currentDevice().model.rangeOfString("Simulator", options: NSStringCompareOptions.CaseInsensitiveSearch, range: nil, locale: nil) != nil {
+                let webVC = (UIApplication.sharedApplication().delegate as! AppDelegate).window?.rootViewController?.storyboard?.instantiateViewControllerWithIdentifier("WebVC") as! WebViewController
+                webVC.url = "http://itunes.apple.com/app/id\(appId!)/"
+                presentController(webVC)
+//                UIApplication.sharedApplication().openURL(NSURL(string: "http://itunes.apple.com/app/id\(appId!)/")!)
+                return
+            }
             let store = SKStoreProductViewController()
             store.delegate = self
             let buttonTitle = sender.titleForState(.Normal)
-            sender.setTitle("Loading...", forState: .Normal)
+            sender.enabled = false
+            sender.setTitle("...Loading AppStore...", forState: .Normal)
             store.loadProductWithParameters([SKStoreProductParameterITunesItemIdentifier:appId!], completionBlock: { (success, error) -> Void in
                 if success {
                     self.presentController(store)
                 }
                 sender.setTitle(buttonTitle, forState: .Normal)
+                sender.enabled = true
             })
             
         } else if linkUrl != nil {

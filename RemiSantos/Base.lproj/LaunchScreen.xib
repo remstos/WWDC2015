@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D113c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D113c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,7 +14,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rémi Santos - WWDC15" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="8" y="20" width="222" height="21"/>
+                    <rect key="frame" x="8" y="100" width="222" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="7g2-Ae-jCu"/>
                         <constraint firstAttribute="width" constant="222" id="u8l-3u-IXV"/>
@@ -31,7 +31,7 @@
                 <constraint firstItem="7xq-xV-lhh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dE9-LZ-yky"/>
                 <constraint firstItem="7xq-xV-lhh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dEj-Cr-grh"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="top" secondItem="7xq-xV-lhh" secondAttribute="bottom" id="rIc-FF-EzL"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="yCk-Q2-VWJ"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="yCk-Q2-VWJ"/>
                 <constraint firstAttribute="trailing" secondItem="7xq-xV-lhh" secondAttribute="trailing" id="zR2-nz-cKD"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

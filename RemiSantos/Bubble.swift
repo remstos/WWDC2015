@@ -7,8 +7,8 @@
 //
 
 import UIKit
-private let maxBubbleSize = 30
-private let minBubbleSize = 5
+private let maxBubbleSize = isIpad ? 50:30
+private let minBubbleSize = isIpad ? 10:5
 
 class Bubble: RSIntroElement {
    
