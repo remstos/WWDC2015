@@ -135,7 +135,7 @@ class Link: RSIntroElement, SKStoreProductViewControllerDelegate {
 
     func moreButtonClicked(sender:UIButton) {
         if appId != nil {
-            if 1 == 1 || UIDevice.currentDevice().model.rangeOfString("Simulator", options: NSStringCompareOptions.CaseInsensitiveSearch, range: nil, locale: nil) != nil {
+            if UIDevice.currentDevice().model.rangeOfString("Simulator", options: NSStringCompareOptions.CaseInsensitiveSearch, range: nil, locale: nil) != nil {
                 let webVC = (UIApplication.sharedApplication().delegate as! AppDelegate).window?.rootViewController?.storyboard?.instantiateViewControllerWithIdentifier("WebVC") as! WebViewController
                 webVC.url = "http://itunes.apple.com/app/id\(appId!)/"
                 presentController(webVC)
