@@ -17,7 +17,6 @@
 		A571D3EC1AC8D74C00BB30EF /* RemiSantosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571D3EB1AC8D74C00BB30EF /* RemiSantosTests.swift */; };
 		A571D3FA1AC8D7A500BB30EF /* RSIntroElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571D3F61AC8D7A500BB30EF /* RSIntroElement.swift */; };
 		A571D3FB1AC8D7A500BB30EF /* RSIntroPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571D3F71AC8D7A500BB30EF /* RSIntroPage.swift */; };
-		A571D3FC1AC8D7A500BB30EF /* RSIntroTopPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571D3F81AC8D7A500BB30EF /* RSIntroTopPage.swift */; };
 		A571D3FD1AC8D7A500BB30EF /* RSIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571D3F91AC8D7A500BB30EF /* RSIntroView.swift */; };
 		A5841E4A1AE2BE45004F3F77 /* PageProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5841E491AE2BE45004F3F77 /* PageProjectsViewController.swift */; };
 		A5841E4C1AE2CAD5004F3F77 /* PageAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5841E4B1AE2CAD5004F3F77 /* PageAboutViewController.swift */; };
@@ -53,7 +52,6 @@
 		A571D3EB1AC8D74C00BB30EF /* RemiSantosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemiSantosTests.swift; sourceTree = "<group>"; };
 		A571D3F61AC8D7A500BB30EF /* RSIntroElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIntroElement.swift; sourceTree = "<group>"; };
 		A571D3F71AC8D7A500BB30EF /* RSIntroPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIntroPage.swift; sourceTree = "<group>"; };
-		A571D3F81AC8D7A500BB30EF /* RSIntroTopPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIntroTopPage.swift; sourceTree = "<group>"; };
 		A571D3F91AC8D7A500BB30EF /* RSIntroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIntroView.swift; sourceTree = "<group>"; };
 		A5841E491AE2BE45004F3F77 /* PageProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageProjectsViewController.swift; sourceTree = "<group>"; };
 		A5841E4B1AE2CAD5004F3F77 /* PageAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageAboutViewController.swift; sourceTree = "<group>"; };
@@ -151,7 +149,6 @@
 			children = (
 				A571D3F61AC8D7A500BB30EF /* RSIntroElement.swift */,
 				A571D3F71AC8D7A500BB30EF /* RSIntroPage.swift */,
-				A571D3F81AC8D7A500BB30EF /* RSIntroTopPage.swift */,
 				A571D3F91AC8D7A500BB30EF /* RSIntroView.swift */,
 			);
 			path = RSIntro;
@@ -276,7 +273,6 @@
 				A571D3FA1AC8D7A500BB30EF /* RSIntroElement.swift in Sources */,
 				A544D92C1AE065BD009A05F2 /* Bubble.swift in Sources */,
 				A5841E4E1AE2CB3C004F3F77 /* RSDevice.swift in Sources */,
-				A571D3FC1AC8D7A500BB30EF /* RSIntroTopPage.swift in Sources */,
 				A571D3FB1AC8D7A500BB30EF /* RSIntroPage.swift in Sources */,
 				A5841E4A1AE2BE45004F3F77 /* PageProjectsViewController.swift in Sources */,
 				A591F12F1AE53C2D003116C2 /* WebViewController.swift in Sources */,
